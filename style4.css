@@ -117,7 +117,7 @@
         "nav    section"
         "aside    section"
         "footer footer";
-        column-gap: 0.5rem;
+        column-gap: 1rem;
         row-gap: 1rem;
     }
 }

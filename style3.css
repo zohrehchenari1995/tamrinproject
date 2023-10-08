@@ -1,0 +1,144 @@
+/* CSS RESET............ */
+*,*::before,*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+/* FONT SIZE..... */
+html{
+    font-size: 62.5%;
+}
+
+p{
+    color: orangered;
+    font-size: 2rem;
+    margin: 2rem;
+}
+img{
+    width: 250px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 2rem;
+    margin-left: 2rem;
+    border: 2px solid orangered;
+}
+p::after{
+    content: "***";
+}
+.hyperlink{
+    color: blueviolet;
+    font-size: 5rem;
+}
+.parent{
+    background-color: midnightblue;
+}
+.article{
+    background-color: gold;
+}
+table,td,th{
+    border: 2px solid green;
+    border-collapse: collapse;
+}
+table{
+    margin: 5rem 8rem;
+
+}
+th{
+    padding: 1rem;
+    background-color: orangered;
+}
+td{
+    padding: 4rem;
+    background-color: gold;
+}
+section#box{
+    width: 200px;
+    height: 180px;
+    background-color: gold;
+    margin-left: 5rem;
+    border-radius: 5rem;
+}
+section#box img{
+    width:50px;
+    height: 50px;
+    margin: 5rem; 
+}
+
+.one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gold;
+
+}
+.parent>p{
+    color: pink;
+}
+.parent+p{
+    color: blue;
+}
+.parent~p{
+    color: mediumseagreen;
+}
+a{
+    color: olive;
+    font-size: 5rem;
+
+}
+a[target]{
+    background-color: lightcoral;
+}
+a[target="_blank"]{
+    color: orangered;
+}
+a[href*=fronthooks]{
+    text-decoration: none;
+}
+a[href^="https://"]{
+    border-radius: 5rem;
+}
+a[href$=".ir"]{
+    padding: 2rem;
+}
+.child :first-child{
+    color: gold;
+}
+.child :last-child{
+    color: pink;
+}
+.child :nth-child(odd){
+    background-color: lightgreen;
+}
+.child :nth-child(even){
+    background-color: lawngreen;
+}
+.child :first-of-type{
+    font-size: 1rem;
+}
+.child :last-of-type{
+    font-size: 5rem;
+}
+a:hover{
+    background-color:gold;
+}
+a:link{
+    color: gold;
+}
+.first::before{
+    content:"@@@@";
+}
+.second::after{
+    content:"!!!!";
+}
+.second{
+    font-size:5rem;
+    color: crimson;
+}
+p::first-letter{
+    color: gold;
+    font-size: 2rem;
+}
+p::first-line{
+    background-color: pink;
+}
